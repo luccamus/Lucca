@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, sans-serif;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+
+#camera {
+    width: 700px;
+    max-width: 90%;
+    height: 420px;
+
+    object-fit: cover;
+
+    border: 2px solid;
+    border-radius: 8px;
+}
+
+#botaoCamera {
+    margin-top: 20px;
+    padding: 12px 30px;
+
+    border: 2px solid;
+    border-radius: 8px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#mensagem {
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 26px;
+    }
+
+    #camera {
+        width: 95%;
+        height: 300px;
+    }
+
+    #botaoCamera {
+        width: 80%;
+    }
+}
